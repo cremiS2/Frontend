@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="src/css/global.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="img_logo">
+            <img class="logo" src="src/img/Frame.png" alt="Logo">
+        </div>
+    </header>
+
+    <div class="botao">
+        <button class="link" id="botaoAdd">Adicionar +</button>
+    </div>
+
+    <section>
+        <div id="lista" class="servicos"></div>
+    </section>
+
+    <!-- Modal para Adicionar comida -->
+    <dialog id="addM">
+        <h3>Adicionar Comida</h3>
+        <div class="forms">
+            <label for="alimento">Nome da comida:</label>
+            <input id="alimento" type="text" placeholder="Nome do prato">
+        </div>
+        <div class="forms">
+            <label for="descricao">Descrição:</label>
+            <input id="descricao" type="text" placeholder="Descrição do prato">
+        </div>
+        <div class="forms">
+            <label for="preco">Preço:</label>
+            <input id="preco" type="number" placeholder="Preço">
+        </div>
+        <div class="forms">
+            <label for="fotoAlimento">URL da imagem:</label>
+            <input id="fotoAlimento" type="url" placeholder="URL da imagem">
+        </div>
+        <button onclick="closeModalAdd()" id="fecharAddM">Fechar</button>
+        <button onclick="AddAlimento()" id="botaoAdicionar">Adicionar</button>
+    </dialog>
+
+    <!-- Modal para Editar Comida -->
+    <dialog id="editM">
+        <h3>Editar Comida</h3>
+        <div class="forms">
+            <label for="alimentoEdit">Nome da comida:</label>
+            <input id="alimentoEdit" type="text">
+        </div>
+        <div class="forms">
+            <label for="descricaoEdit">Descrição:</label>
+            <input id="descricaoEdit" type="text">
+        </div>
+        <div class="forms">
+            <label for="precoEdit">Preço:</label>
+            <input id="precoEdit" type="number">
+        </div>
+        <div class="forms">
+            <label for="fotoAlimentoEdit">URL da imagem:</label>
+            <input id="fotoAlimentoEdit" type="url">
+        </div>
+        <button onclick="SaveEdit()" id="botaoSalvarEdit">Salvar Alterações</button>
+        <button onclick="closeModalEdit()" id="fecharEditM">Fechar</button>
+    </dialog>
+
+    <!-- Modal de Exclusão -->
+    <dialog id="modalExcluir">
+        <h3>Tem certeza que deseja excluir?</h3>
+        <div>
+            <button id="confirmarExcluir">Sim</button>
+            <button id="cancelarExcluir">Cancelar</button>
+        </div>
+    </dialog>
+
+    <footer class="footer">
+        <div class="empresas">
+            <img class="facebook" src="src/img/facebook.png" alt="Facebook">
+            <img class="instagram" src="src/img/instagram.png" alt="Instagram">
+        </div>
+        <p class="text_footer">© Site autoral para a empresa Sakura Restaurantes</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+section {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 7%;
+}
+
+h3 {
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+.servicos {
+    display: flex; /* Alinha os itens em uma linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se não houver espaço */
+    justify-content: space-between; /* Adiciona espaço entre os cards */
+}
+
+.card {
+    flex: 1; /* Permite que os cards ocupem o espaço disponível */
+    max-width: 300px;; /* Define uma largura mínima para os cards */
+    max-height: 600px; /* Define uma altura máxima para os cards */
+    padding: 20px;
+    margin: 1%; /* Margem entre os cards */
+    border: solid 1px white;
+    border-radius: 10px;
+    overflow: hidden; /* Oculta o conteúdo que excede a altura máxima */
+    /* ou use overflow: auto; para adicionar uma barra de rolagem */
+}
+
+.imagem {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_link_remover, .botao_link_alterar {
+    background: red;
+    color: white;
+    padding: 3px;
+    border: solid blue 4px; 
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 40%;
+    float: right;
+    margin-left: 5%;
+}
+
+.botao_link_remover:hover {
+    background-color: darkred;
+    border: solid 2px blue;
+    font-size: 20px;
+    color: black;
+}
+
+.botao_link_alterar:hover {
+    background-color: orangered;
+    border: solid 2px blue;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+#addM{
+    width: 350px;
+    height: 900px;
+    background-color: #d3d3d3;
+}
+
+.forms{
+    background-color: aqua;
+    margin-top: 20px;
+}
+
+.modal{
+    color: black;
+    text-align: center;
+}
+
+#botaoAdicionar, #fecharAddM{
+    color: white;
+    padding: 3px;
+    border: solid 1px black; 
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 40%;
+    float: right;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+#botaoAdicionar{
+    background-color: green;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+#fecharAddM{
+    background-color: red;
+    border: solid 2px black;
+    font-size: 20px;
+    color: black;
+}
+
+label{
+    margin-left: 10px;
+}
+
+input{
+    float: right;
+    border-radius: 5px;
+}

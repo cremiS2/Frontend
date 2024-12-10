@@ -1,0 +1,25 @@
+footer{
+    margin-top: 100px;
+    height: 250px;
+    background-image: url("../img/colorful-leaves-autumn-park-japan.jpg");
+    background-size: cover;
+}
+
+.empresas{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.facebook, .instagram{
+    width: 30px;
+    height: 30px;
+    margin: 10% 10% 0% 10%;
+}
+
+.text_footer{
+    text-align: center;
+    color: black
+}
